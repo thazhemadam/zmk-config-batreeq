@@ -48,9 +48,9 @@
     cs-gpios = <&gpio1 7 GPIO_ACTIVE_HIGH>;
 };*/
 
-&spi0 {
+&pro_micro_spi {
     status = "okay";
-    compatible = "nordic,nrf-spim";
+    //compatible = "nordic,nrf-spim";
     cs-gpios = <&pro_micro 0 GPIO_ACTIVE_LOW>;
 //FIXME: wrong trackball
     trackball: trackball@0 {
