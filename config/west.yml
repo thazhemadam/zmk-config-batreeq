@@ -1,7 +1,7 @@
 manifest:
   remotes:
     - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
+      url-base: https://github.com/petejohanson
     - name: bullwinkle3000
       url-base: https://github.com/bullwinkle3000
     # Additional modules containing boards/shields/custom code can be listed here as well
