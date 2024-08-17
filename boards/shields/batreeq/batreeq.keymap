@@ -186,7 +186,6 @@ combo_##NAME { \
   ╰───────────╮ 26  27 │ │ 28  29 ╭───────────╯
               ╰────────╯ ╰────────╯            
 */ 
-sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 
 / {
 
@@ -195,7 +194,7 @@ sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 
         aptmak {
             label = "APT";
-
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
             bindings = <
                 &kp ESC        &kp W          &kp F          &kp P          &kp B          &kp J          &kp L          &kp U          &kp Y          &kp ESC
                 &hl LGUI R    &hl LALT S     &hl LCTRL T     &hl LSHFT H    &hl RALT K     &hr RALT X     &hr RSHFT N    &hr RCTRL A     &hr LALT I     &hr RGUI O
@@ -208,7 +207,7 @@ sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
         numbers {
             label = "NUM";
-
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
             bindings = <
                 &none            &none             &none                &none              &none          &none          &kp N7         &kp N8         &kp N9    &none 
                 &hl LGUI KP_PLUS &hl LALT KP_MINUS &hl LCTRL KP_ASTERISK &hl LSHFT KP_SLASH &kp RALT       &none          &kp N4         &kp N5         &kp N6         &kp DOT
@@ -220,7 +219,7 @@ sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
         navigation {
             label = "NAV";
-
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
             bindings = <
                 &none         &none          &none          &none           &kp C_VOL_UP   &kp LC(X)      &kp LC(INSERT) &kp LS(INSERT) &kp INSERT      &none 
                 &sk LGUI      &sk LALT       &sk LCTRL       &sk LSHFT       &kp C_VOL_DN   &kp C_MUTE     &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT
@@ -232,7 +231,7 @@ sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
         symbols {
             label = "SYM";
-
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
             bindings = <
                 &none          &none          &none          &none            &none          &none          &none          &none          &none          &none
                 &kp EXCL       &kp AT         &kp HASH       &kp DOLLAR       &none          &none          &kp AMPERSAND  &kp ASTERISK   &kp PERCENT    &kp CARET
@@ -244,7 +243,7 @@ sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
         function {
             label = "FUN";
-
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
             bindings = <
                 &none          &bootloader    &trans         &trans         &trans         &kp F12        &kp F7         &kp F8         &kp F9         &none 
                 &bootloader    &kp F12        &kp F11        &kp F10        &trans         &kp F11        &kp F4         &kp F5         &kp F6         &kp F10
