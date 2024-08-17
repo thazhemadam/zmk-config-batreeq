@@ -234,7 +234,7 @@ combo_##NAME { \
                                &kp F9         &kp F8         &kp F7                                       &kp F1         &kp F2         &kp F3
                                                              &trans         &trans         &trans         &trans  
                                                              &trans &trans &trans &trans 
- 11                                                          &trans &trans &trans &trans &trans
+                                                             &trans &trans &trans &trans &trans
             >;
         };
 
