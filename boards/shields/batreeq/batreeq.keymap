@@ -19,21 +19,6 @@
     continue-list = <UNDERSCORE MINUS BSPC LSHFT RSHFT>;
 };
 
-/ {
-    macros {
-        macro_sch: macro_sch {
-            label = "Macro_sch";
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <
-        		    &macro_tap &kp S
-        		    &macro_release &kp RSHIFT
-        		    &macro_tap &kp C &kp H
-	          >;
-        };
-    };
-};
-
 
 #define COMBO(NAME, BINDINGS, KEYPOS) \
 combo_##NAME { \
@@ -53,7 +38,6 @@ combo_##NAME { \
         COMBO(_oe, &kp RA(O), 17 26)
         COMBO(_ue, &kp RA(U), 6 26)
         COMBO(_sz, &kp RA(S), 9 25)
-        COMBO(sch, &macro_sch, 0 2)
         COMBO(slash, &kp SLASH, 24 25)
         COMBO(dash, &kp MINUS, 23 24)
 //        COMBO(enter, &kp ENTER, 21 22 23)
