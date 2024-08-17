@@ -16,7 +16,7 @@
 		gpio-controller;
 		spi-max-frequency = <200000>;
 		reg = <0>;
-		#gpio-cells = <2>;
+		#gpio-cells = <8>;
 		ngpios = <8>;
 	};
 };
