@@ -47,7 +47,7 @@
     compatible = "nordic,nrf-spim";
     cs-gpios = <&gpio1 7 GPIO_ACTIVE_HIGH>;
 };*/
-/*
+
 &pro_micro_spi {
     status = "okay";
     //compatible = "nordic,nrf-spim";
@@ -59,7 +59,7 @@
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 
-        /*   optional features   */ /*
+        /*   optional features   */ 
         snipe-layers = <1 4>;
         scroll-layers = <2 3>;
         // automouse-layer = <4>;
@@ -72,8 +72,8 @@
     device = <&trackball>;
 
   };
-};
-*/
+
+
 / {
     chosen {
         zmk,kscan = &kscan0;
