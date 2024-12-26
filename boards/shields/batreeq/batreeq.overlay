@@ -42,15 +42,8 @@
 };
 
 
-//FIXME: change this to work with the waveshare display
-/*nice_view_spi: &spi1 {
-    compatible = "nordic,nrf-spim";
-    cs-gpios = <&gpio1 7 GPIO_ACTIVE_HIGH>;
-};*/
-
 &pro_micro_spi {
     status = "okay";
-    //compatible = "nordic,nrf-spim";
     cs-gpios = <&pro_micro 0 GPIO_ACTIVE_LOW>;
     trackball: trackball@0 {
         status = "okay";
